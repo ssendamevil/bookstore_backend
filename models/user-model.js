@@ -6,7 +6,8 @@ const UserSchema = new Schema({
     name: {type: String, required:true},
     surname: {type: String, required: true},
     isActivated:{type:Boolean, default:false, required: true},
-    activationLink:{type:String, required:true}
+    activationLink:{type:String, required:true},
+    status: {type: String, default: "USER"},
 })
 
 module.exports = model('User',UserSchema)
